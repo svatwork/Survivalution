@@ -8,6 +8,7 @@ public class Colour : MonoBehaviour
 
     void Awake()
     {
-        GetComponent<Renderer>().material = Mats[Random.Range(0, Mats.Count)];
+        //GetComponent<Renderer>().material = Mats[Random.Range(0, Mats.Count)];
+        GetComponent<Renderer>().material = Mats[3];
     }
 }

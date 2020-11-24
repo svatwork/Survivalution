@@ -15,7 +15,7 @@ public class LevelLoader : MonoBehaviour
     {
         GameObject Player = GameObject.Find("Player");
         Eat eat = Player.GetComponent<Eat>();
-        if (eat.FoodEaten >= eat.FoodNeeded)
+        if (eat.FoodEaten >= Eat.FoodNeeded)
         {
             LoadNextLevel();
         }
