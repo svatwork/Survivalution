@@ -18,10 +18,10 @@ public class MutationMenu : MonoBehaviour
     private float healthMultiplier = 1.1f;
 
     [SerializeField]
-    private float speedMultiplier = 1.1f;
+    private float speedMultiplier = 1f;
 
     [SerializeField]
-    private float healthRegenRateMultiplier = 1.1f;
+    private float healthRegenRateMultiplier = 10f;
 
     //private PlayerStats stats;
 
@@ -47,13 +47,13 @@ public class MutationMenu : MonoBehaviour
     
     public void UpgradeSpeed()
     {
-        PlayerStats.movementSpeed = (int)(PlayerStats.movementSpeed * speedMultiplier);
+        PlayerStats.movementSpeed = (int)(PlayerStats.movementSpeed + speedMultiplier);
         UpdateValues();
     }
     
     public void UpgradeHealthRegenRate()
     {
-        PlayerStats.healthRegenRate = (int)(PlayerStats.healthRegenRate * healthRegenRateMultiplier);
+        PlayerStats.healthRegenRate = (int)(PlayerStats.healthRegenRate + healthRegenRateMultiplier);
         UpdateValues();
     }
 }

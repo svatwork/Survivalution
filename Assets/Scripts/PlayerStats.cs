@@ -11,7 +11,7 @@ public static class PlayerStats
     // health
     public static int maxHealth = 100;
 
-    public static float healthRegenRate = 10f;
+    public static float healthRegenRate = 0f;
 
     private static int _curHealth;
     public static int curHealth
@@ -22,7 +22,7 @@ public static class PlayerStats
 
 
     // speed
-    public static float movementSpeed = 10f;
+    public static float movementSpeed = 5f;
 
 
     // FUNCTIONS

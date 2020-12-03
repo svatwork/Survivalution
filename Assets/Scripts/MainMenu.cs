@@ -7,6 +7,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    void Awake()
+    {
+        RoundManager.RoundCount = 0;
+        PlayerStats.maxHealth = 100;
+        PlayerStats.healthRegenRate = 0f;
+        PlayerStats.movementSpeed = 5f;
+    }
+
     public void PlayGame()
     {
         UnityEngine.Debug.Log("PlayGame");

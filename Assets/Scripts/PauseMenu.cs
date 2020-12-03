@@ -15,7 +15,6 @@ public class PauseMenu : MonoBehaviour
     public void ResignGame()
     {
         SceneManager.LoadScene(0);
-        RoundManager.RoundCount = 0;
         Resume();
     }
 

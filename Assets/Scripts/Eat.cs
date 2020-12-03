@@ -10,7 +10,7 @@ public class Eat : MonoBehaviour
     public float Increase;
 
     public int FoodEaten = 0;
-    public static int FoodNeeded = 10;
+    public static int FoodNeeded = 21;
 
     void Start()
     {
